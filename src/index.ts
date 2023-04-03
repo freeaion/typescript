@@ -2,11 +2,11 @@ import { TodoItem } from "./todoItem"
 import { TodoCollection } from "./todoCollection"
 import * as inquirer from 'inquirer';
 
-let todos = [
+const todos = [
   new TodoItem(1, "Buy flowers"), new TodoItem(2, "Get shoes"),
   new TodoItem(3, "Collect tickets"), new TodoItem(4, "call joe", true)];
 
-let collection = new TodoCollection("Adam", todos);
+const collection = new TodoCollection("Adam", todos);
 
 function displayToList(): void {
   console.log(`${collection.userName}'s Todo List`
