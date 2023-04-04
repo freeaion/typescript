@@ -6,8 +6,8 @@ type ItemCounts = {
 }
 
 export class TodoCollection {
-  private nextId: number = 1;
-  private itemMap = new Map<number, TodoItem>();
+  private nextId = 1;
+  protected itemMap = new Map<number, TodoItem>();
 
   constructor(
     public userName: string,
